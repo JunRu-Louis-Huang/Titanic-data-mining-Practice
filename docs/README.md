@@ -459,7 +459,7 @@ dataset.describe(include='all')
 例如：Age 可能和 家長是否有帶家人小孩一起登船（與SibSp、Parch 有關），而家庭登船大多會選在同一個登船港口、船艙，所以補值時可以參照。
 
 
-由於補值參照資料牽涉其他複雜的分析，本作業擬簡化步驟直接先對缺失資料值最多的 Cabin 捨去不用。 對 Age 欄位以中位數補值，對 Embarked 欄位以眾數資料補值。
+由於補值參照資料牽涉其他複雜的分析，本擬簡化步驟直接先對缺失資料值最多的 Cabin 捨去不用。 對 Age 欄位以中位數補值，對 Embarked 欄位以眾數資料補值。
 而PassengerId、Name、Ticket也捨去不用
 
 
@@ -845,7 +845,6 @@ plt.title("Corr heatmap (Before encording)")
 plt.show()
 ```
 
-    C:\Users\Tibame_T14\AppData\Local\Temp\ipykernel_13376\3711769078.py:4: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
       feature_corr = dataset.corr()
     
 
